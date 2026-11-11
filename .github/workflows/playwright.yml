@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Instalar navegadores
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install chromium
 
       - name: Rodar testes
         run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
@@ -96,3 +96,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
