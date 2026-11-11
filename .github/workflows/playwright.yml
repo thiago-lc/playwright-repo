@@ -15,7 +15,7 @@ permissions:
 jobs:
   test:
     name: Testes (shard ${{ matrix.shardIndex }}/${{ matrix.shardTotal }})
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     strategy:
       fail-fast: false
@@ -51,7 +51,7 @@ jobs:
     name: Mesclar e publicar relatório
     if: ${{ !cancelled() }}
     needs: [test]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
@@ -89,7 +89,7 @@ jobs:
     name: Publicar no GitHub Pages
     if: ${{ !cancelled() && github.ref == 'refs/heads/main' }}
     needs: [report]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
