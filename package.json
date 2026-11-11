@@ -1,0 +1,20 @@
+{
+  "name": "playwright-portfolio",
+  "version": "1.0.0",
+  "description": "Automação de testes E2E e API com Playwright + TypeScript + GitHub Actions",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test --project=e2e",
+    "test:api": "playwright test --project=api",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --project=e2e --headed",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
