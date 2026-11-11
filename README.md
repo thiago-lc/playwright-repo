@@ -1,10 +1,10 @@
 # Playwright Portfolio
 
-![Playwright Tests](https://github.com/SEU_USUARIO/playwright-portfolio/actions/workflows/playwright.yml/badge.svg)
+![Playwright Tests](https://github.com/thiago-lc/playwright-repo/actions/workflows/playwright.yml/badge.svg)
 
 Automação de testes **E2E** e de **API** com **Playwright + TypeScript**, rodando em **CI/CD no GitHub Actions** com sharding e relatório publicado no GitHub Pages.
 
-📊 **Relatório da última execução:** https://SEU_USUARIO.github.io/playwright-portfolio/
+📊 **Relatório da última execução:** https://thiago-lc.github.io/playwright-repo/
 
 ## O que este projeto demonstra
 
@@ -53,4 +53,3 @@ npm run report      # abre o último relatório
 ## Autor
 
 **Thiago Luiz** — QA Automation / Desenvolvedor Full Stack
-[LinkedIn](https://www.linkedin.com/in/SEU_PERFIL)
